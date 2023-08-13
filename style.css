@@ -14,33 +14,82 @@ Images: Pexels (n.d.) Banner images , pexels website, accessed 8 August, 2023. h
 Text in About Us, Terms, Privacy pages Book description: OpenAI (2023) ChatGPT (August 3 version) [Large language model], accessed 8 August, 2023. https://chat.openai.com */
 
 
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
+
+
+
+
+
 
 /* general */
 body {
     margin: 0 auto;
     padding: 0 20px;
-    background: #f0c393;
-    font-family:'Old Standard TT', serif;
+    background: #149f94;
+    font-family: 'Preahvihear', sans-serif;
     font-size: 22px;
     color: #293D48;
 }
 
 
 /* header */
-/* logo */
-.logo {
+
+header{ 
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    background:#f7e8d4;
+    position: sticky;
+    border-radius: 10px;
+    top:0;
+    left:0;
+}
+
+.navbar {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    list-style: none;
+    padding:0 20px;
+    position:relative;
+}
+ .logo a{
+    text-decoration: none;
+    color: #000054;
+}
+
+.navbar li a {
+    text-decoration: none;
     justify-content: center;
-    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000054;
+    transition: 0.5s ease;
+}
+.navbar li a:hover, 
+.navbar li a.active{ 
+    color: #f5a555
+}
+.navbar  .logo:hover, 
+.navbar  .logo.active{ 
+    color: #f5a555;
 }
 
-.logo a {
-    text-align: center;
-}
-
-.logo img {
+.header .logo {
     width: 50px;
-    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
 }
 
 /* banner */
@@ -50,36 +99,43 @@ body {
 
 /* video */
 
-.video-header {
+.video {
     width: 100%;
     border-radius: 5px;
 }
 /* basic menu styling */
 
 
-.menu {
-    color: #F7E8D3;
-    font-size: 32px;
-}
 
-/* menu list */
-.menu ul {
-    border-radius: 5px;
-}
-
-.menu ul {
-    list-style-type: none;
+/* navbar list */
+.footer-navbar ul {
+    display: flex;
+    list-style: none;
+    margin: auto;
     padding: 0;
-    margin: 0;
-    background-color: #293D48;
 }
 
-.menu li a {
+.footer-navbar li {
+    list-style: none;
+    padding:0 20px;
+    margin:auto;
+}
+
+.footer-navbar li a {
     text-decoration: none;
-    color: #F7E8D3;
-    display: block;
-    padding: 10px;
-    font-weight: bold;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000054;
+    transition: 0.5s ease;
+}
+.footer-navbar li a:hover, 
+.navbar li a.active{ 
+    color: #f5a555
+}
+.footer-navbar  .logo:hover, 
+.footer-navbar  .logo.active{ 
+    color: #f5a555;
 }
 
 /* hamburger icon */
@@ -88,29 +144,22 @@ body {
     width: 30px;
     height: 30px;
     padding: 5px;
-    font-size: 20px;
-    background-color: #293D48;
-    color: #F7E8D3;
+    font-size: 15px;
+    background-color: #f5a555;
+    color: #000054;
     border-radius: 5px;
 }
 
 
 
 /* effect */
-header li a:hover {
-    border: 3px solid #293D48;
-}
 
-.menu li a:hover {
-    color: #293D48;
-    background-color: #F7E8D3;
-}
 
-nav li:first-child a:hover {
+.navbar li:first-child a:hover {
     border-radius: 5px 0 0 5px;
 }
 
-nav li:last-child a:hover {
+.navbar li:last-child a:hover {
     border-radius: 0 4px 4px 0;
 }
 
@@ -173,7 +222,7 @@ nav li:last-child a:hover {
 .button-group .quantity .select-box {
     width: 50%;
     color: #F7E8D3;
-    background-color: #293D48;
+    background-color: #000054;
     text-align: center;
     padding: 5px;
     border-radius: 5px;
@@ -182,7 +231,7 @@ nav li:last-child a:hover {
 
 /* submit button */
 .button-group .submit-button {
-    background-color: #293D48;
+    background-color: #000054;
     color: #F7E8D3;
     font-family: 'Old Standard TT', serif;
     width: 100%;
@@ -195,9 +244,9 @@ nav li:last-child a:hover {
 /* both button transition */
 .button-group .submit-button:hover,
 .button-group .quantity .select-box:hover {
-    background-color: #F7E8D3;
-    color: #293D48;
-    border: 3px solid #293D48;
+    background-color: #149f94;
+    color: #F7E8D3;
+    border: 3px solid #149f94;
 }
 
 /* detail buttons */
@@ -242,7 +291,7 @@ nav li:last-child a:hover {
 .suggestion.cards h2 {
     font-size: 30px;
     color: #F7E8D3;
-    background-color: #293D48;
+    background-color: #000054;
 }
 
 /* larger screen */
@@ -293,8 +342,8 @@ nav li:last-child a:hover {
     /* container of book's images and infomation */
     .book-detail {
         display: flex;
-        background-color: white;
-        border: 2px solid #293D48;
+        background-color: #f0c393;
+        border: 2px solid #000054;
         border-radius: 5px;
         padding: 20px;
         margin-bottom: 30px;
@@ -327,234 +376,7 @@ nav li:last-child a:hover {
     .book-info-box .separator {
         display: block;
         border-radius: 5px;
-        background-color: #293D48;
-    }
-
-    /* Book information container */
-    .book-info-box {
-        display: flex;
-        flex-direction: column;
-        flex: 0 1 50%;
-        justify-content: space-evenly;
-    }
-
-    /* Quantity button with select box */
-    .button-group .quantity {
-        margin: 20px 0;
-    }
-
-    .button-group .quantity .select-box {
-        width: 30%;
-    }
-}
-/* basic layout */
-/* main image */
-.main-image {
-    margin-bottom: 20px;
-}
-
-.main-image img,
-.small-image img {
-    border: 2px solid #293D48;
-    border-radius: 5px
-}
-
-/* 3 small images */
-.small-image {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.small-image a {
-    width: 30%;
-}
-
-.small-image img {
-    border: 2px solid #293D48;
-}
-
-/* book information */
-.book-info-box {
-    font-size: 15px;
-    color: #293D48;
-}
-
-.book-info-box strong,
-.book-info-box h1 {
-    font-size: 21px;
-}
-
-/* quatity and add to cart */
-.button-group .quantity,
-.button-group .submit-button {
-    display: block;
-    margin-bottom: 20px;
-}
-
-/* quantity */
-.button-group .quantity {
-    color: #293D48;
-}
-
-.button-group .quantity .select-box {
-    width: 50%;
-    color: #F7E8D3;
-    background-color: #293D48;
-    text-align: center;
-    padding: 5px;
-    border-radius: 5px;
-    border: none;
-}
-
-/* submit button */
-.button-group .submit-button {
-    background-color: #293D48;
-    color: #F7E8D3;
-    font-family: 'Old Standard TT', serif;
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    margin-bottom: 20px;
-}
-
-/* both button transition */
-.button-group .submit-button:hover,
-.button-group .quantity .select-box:hover {
-    background-color: #F7E8D3;
-    color: #293D48;
-    border: 3px solid #293D48;
-}
-
-/* detail buttons */
-.book-box details {
-    padding: 10px;
-    border: 2px solid #293D48;
-    border-radius: 5px;
-    background-color: #F7E8D3;
-    color: #293D48;
-}
-
-.book-box details:first-child {
-    border-bottom: none;
-    border-radius: 5px 5px 0 0;
-}
-
-.book-box details:last-child {
-    border-top: none;
-    border-radius: 0 0 5px 5px;
-}
-
-.book-box details summary {
-    text-align: center;
-    font-weight: bold;
-}
-
-.book-box details summary:hover {
-    text-decoration: underline 2px;
-    text-underline-offset: 6px;
-}
-
-/* separator line */
-.book-box .separator {
-    background-color: #293D48;
-}
-
-.book-info-box .separator {
-    display: none;
-}
-
-/* suggestion */
-.suggestion.cards h2 {
-    font-size: 30px;
-    color: #F7E8D3;
-    background-color: #293D48;
-}
-
-/* larger screen */
-@media screen and (min-width: 768px) {
-
-    /*<!-- Book info --> */
-    .book-info-box {
-        font-size: 21px;
-    }
-
-    .book-info-box strong,
-    .book-info-box h1 {
-        font-size: 30px;
-    }
-
-    /* quantity button */
-    .button-group .quantity .select-box {
-        width: 40%;
-    }
-
-    /* all of images */
-    .book-detail-images {
-        display: flex;
-    }
-
-    .small-image {
-        order: 1;
-        flex-direction: column;
-        flex: 1 1 19%;
-        justify-content: space-between;
-        margin: 0 0 20px;
-    }
-
-    .small-image a {
-        width: 84%;
-    }
-
-    .main-image {
-        order: 2;
-        flex: 1 1 83%;
-    }
-
-}
-
-/* largest screen */
-@media screen and (min-width: 992px) {
-
-    /* container of book's images and infomation */
-    .book-detail {
-        display: flex;
-        background-color: white;
-        border: 2px solid #293D48;
-        border-radius: 5px;
-        padding: 20px;
-        margin-bottom: 30px;
-    }
-
-    /* container of book's large image and 3 smaller images */
-    .book-detail-images {
-        flex: 0 1 50%;
-    }
-
-    /* all of book's images */
-    .small-image {
-        align-items: center;
-        margin: 6px 0;
-    }
-
-    .small-image a {
-        width: 75%;
-    }
-
-    .main-image {
-        margin-bottom: 0;
-    }
-
-    .main-image img {
-        border: none;
-    }
-
-    /* Decorated horizontal line */
-    .book-info-box .separator {
-        display: block;
-        border-radius: 5px;
-        background-color: #293D48;
+        background-color: #000054;
     }
 
     /* Book information container */
@@ -592,7 +414,7 @@ nav li:last-child a:hover {
     margin: 10px 0;
     padding: 10px;
     color: #F7E8D3;
-    background-color: #293D48;
+    background-color: #000054;
     border-radius: 5px;
 }
 
@@ -603,7 +425,7 @@ nav li:last-child a:hover {
 
 .card {
     border-radius: 5px;
-    border: 2px solid #293D48;
+    border: 2px solid #000054;
     background: white;
     transition: border .2s;
     margin-bottom: 15px;
@@ -628,8 +450,7 @@ nav li:last-child a:hover {
 
 /* effect */
 .cards h2 a:hover {
-    text-decoration: underline 2px;
-    text-underline-offset: 7px;
+    color: #f5a555;
     border-radius: 5px;
 }
 
@@ -684,7 +505,7 @@ nav li:last-child a:hover {
     margin: 11px 0;
     padding: 10px;
     color: #F7E8D3;
-    background-color: #29353b;
+    background-color: #000054;
     border-radius: 5px;
 }
 
@@ -720,13 +541,13 @@ nav li:last-child a:hover {
 
 /* effect */
 .cards h2 a:hover {
-    text-decoration: underline 2px;
-    text-underline-offset: 7px;
+    color:#f5a555;
     border-radius: 5px;
 }
 
 .card:hover {
-    border: 4px solid #293D48;
+    border: 4px solid #000054;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.08);
     font-weight: bold;
 }
 
@@ -758,54 +579,54 @@ nav li:last-child a:hover {
         flex: 0 1 calc(33% - 5px);
     }
 }
-/* contact us container */
-.contact-us {
+/* contact  container */
+.contact {
     background-color: #f0c393;
-    color: #293D48;
+    color: #000054;
     margin-bottom: 21x;
-    border-radius: 6px;
+    border-radius: 5px;
     padding: 21px 201px 11px;
     font-size: 16px;
 }
 
 /* legend and fieldset */
-.contact-us legend {
+.contact legend {
     text-align: center;
 }
 
-.contact-us fieldset {
+.contactfieldset {
     border-radius: 5px;
-    background-color: #F7E8D3;
+    background-color: #f0c393;
 }
 
 /* adjust behaviour and set the width for form's box */
-.contact-us input[type="text"],
-.contact-us input[type="email"],
-.contact-us input[type="tel"],
-.contact-us textarea,
-.contact-us select {
+.contact input[type="text"],
+.contact input[type="email"],
+.contact input[type="tel"],
+.contact textarea,
+.contact select {
     box-sizing: border-box;
     width: 90%;
 }
 
-.contact-us input[type="text"],
-.contact-us input[type="email"],
-.contact-us input[type="tel"],
-.contact-us input[type="checkbox"],
-.contact-us input[type="radio"],
-.contact-us text,
-.contact-us textarea,
-.contact-us select {
+.contact input[type="text"],
+.contact input[type="email"],
+.contact input[type="tel"],
+.contact input[type="checkbox"],
+.contact input[type="radio"],
+.contact text,
+.contact textarea,
+.contact select {
     color: #293D48;
     padding: 3px;
     margin: 15px;
     vertical-align: middle;
 }
 
-.contact-us .form-button input[type=submit],
-.contact-us .form-button input[type=reset] {
-    background-color: #F7E8D3;
-    color: #293D48;
+.contact .form-button input[type=submit],
+.contact .form-button input[type=reset] {
+    background-color: #f0c393;
+    color: #000054;
     border-radius: 5px;
     border: none;
     padding: 7px;
@@ -813,20 +634,20 @@ nav li:last-child a:hover {
 }
 
 /* form's buttons */
-.contact-us .form-button {
+.contact .form-button {
     margin: 20px;
     text-align: center;
 }
 
-.contact-us .form-button input[type=submit]:hover,
-.contact-us .form-button input[type=reset]:hover {
-    background-color: #293D48;
-    color: #F7E8D3;
+.contact .form-button input[type=submit]:hover,
+.contact .form-button input[type=reset]:hover {
+    background-color: #00c925;
+    color: #000054;
     border: 2px solid #F7E8D3;
 }
 
 /* form's label */
-.contact-us label {
+.contact label {
     display: block;
 }
 
@@ -834,7 +655,7 @@ nav li:last-child a:hover {
 @media screen and (min-width: 500px) {
 
     /* fieldset */
-    .contact-us fieldset {
+    .contact fieldset {
         padding: 5px 10%;
     }
 }
@@ -843,20 +664,20 @@ nav li:last-child a:hover {
 @media screen and (min-width: 768px) {
 
     /* adjust the width of the page */
-    .contact-us {
+    .contact {
         width: 50%;
     }
 
-    .contact-us label {
+    .contact label {
         display: inline-block;
         width: 20%;
     }
 
-    .contact-us input[type="text"],
-    .contact-us input[type="email"],
-    .contact-us input[type="tel"],
-    .contact-us textarea,
-    .contact-us select {
+    .contact input[type="text"],
+    .contact input[type="email"],
+    .contact input[type="tel"],
+    .contact textarea,
+    .contact select {
         width: 65%;
     }
 }
@@ -869,27 +690,39 @@ footer,
 .footer-content {
     border-radius: 5px;
 }
+.footer-img{
+    width:50px;
+}
 
 footer {
-    background-color:#F7E8D3;
+    background-color: #f7e8d4;
 }
 
 footer .separator {
-    background-color:#f0c393;
+    background-color:#000054;
+    height:3px;
+    margin: 90p;
 }
-
 .footer-box {
-    background-color:#293D48;
+    background-color:#F7E8D3;
 }
 
 .footer-content {
-    text-align: center;
+    margin:10px
 }
+.footer-box img{
+    margin: 50px;
+    width:50px;
+    padding:20px;
+}
+
+
 
 .footer-content,
 .footer-content a {
-    color: #F7E8D3;
+    color: #000054;
     text-decoration: none;
+    text-align: center;
 }
 
 /* effect */
@@ -913,11 +746,12 @@ footer li:last-child a:hover {
         flex-wrap: wrap;
         justify-content: space-between;
         margin: 0 auto;
+        align-items: center;
     }
 
-    .footer-content {
-        flex: 1 0 auto;
-    }
+    .footer-box img{
+        margin: auto;
+    };
 }
 
 /* larger screen */
@@ -948,24 +782,35 @@ img {
 
 /* mobile layout with hamburger bar */
 @media (max-width: 767px) {
-    nav {
+    .navbar {
         flex-direction: column;
         align-items: flex-start;
         height: auto;
+        background-color: #f0c393;
     }
 
-    nav ul {
+    .navbar ul {
         flex-direction: column;
     }
 
-    nav li {
+    .navbar li {
         margin-right: 0;
         margin-bottom: 10px;
-        font-size: 20px;
+        font-size: 20px; 
     }
 
-    nav {
+    .navbar {
         display: none;
+    }
+    .footer-navbar ul{
+        flex-direction: column;
+        align-items: flex-star;
+        height: auto;
+        margin:auto;
+    }
+    .footer-box a img{
+        display: flex;
+        margin:auto
     }
 
     /* hamburger icon */
@@ -976,10 +821,13 @@ img {
     }
     
     .mobile-nav-icon:hover {
-        transform: rotate(90deg);
+        display: block;
+    }
+    .mobile-nav-icon:hover::after{
+        display: none;
     }
 
-    .mobile-nav-icon:hover+nav {
+    .mobile-nav-icon:hover+.navbar {
         display: block;
     }
 
@@ -1037,23 +885,24 @@ img {
 
 .bread li {
     display: inline-block;
-    color: #293D48;
+    color: #f7e8d4;
 
 }
 
 .bread li a {
-    color: #293D48;
+    color: #f7e8d4;
     text-decoration: none;
 }
 
 /* adjustment for current navigation */
 .bread li:last-child {
-    text-decoration: underline;
+    text-decoration: underline ;
+    
 }
 
 /* add ">" symbol after any list item except the last one */
 .bread li:not(:last-child):after {
-    content: ">";
+    content: "/";
     margin: 0 5px 0 12px;
     color: #293D48;
 }
@@ -1067,8 +916,6 @@ img {
         font-size: 22px;
     }
 }
-
-
 
 /* about us */
 .policy-and-terms.about-us {
