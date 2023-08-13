@@ -33,7 +33,9 @@ body {
     font-size: 22px;
     color: #000054;
 }
-
+.center{
+    margin:auto;
+}
 
 /* Responsive */
 
@@ -902,11 +904,6 @@ footer li:last-child a:hover {
 .contact legend {
     text-align: center;
 }
-
-.contact .center{
-     margin:auto;
-    }
-   
 
 .contact fieldset {
     border-radius: 7px;
