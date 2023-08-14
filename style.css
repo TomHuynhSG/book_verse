@@ -346,8 +346,8 @@ margin-bottom: 20px;
 /* both button transition */
 .button-group .submit-button:hover,
 .button-group .quantity .select-box:hover {
-    background-color: #000054;
-    color: #f7e8d4;
+    background-color:#efe792;
+    color:#000054;
     border: 3px solid #000054;
 }
 
