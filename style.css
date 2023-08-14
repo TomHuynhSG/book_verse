@@ -209,7 +209,7 @@ img {
     width: 100%;
     border-radius: 5px;
 }
-/* Youtube iframe */
+/* Youtube and location iframe */
 .iframe{ 
 display: block;
 margin: auto;
