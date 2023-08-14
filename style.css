@@ -223,7 +223,189 @@ margin-bottom: 20px;
     text-align: center;
 }
    
+/* card layout */
+.card {
+    border-radius: 5px;
+    border: 2px solid #000054;
+    background: white;
+    transition: border .2s;
+    margin-bottom: 15px;
+}
+.cards section {
+    margin: 20px 0 50px;
+}
 
+.cards section,
+.card {
+    border-radius: 5px;
+}
+
+
+.cards h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
+    color: #f7e8d4;
+    background-color: #000054;
+    border-radius: 5px;
+}
+
+.cards a {
+    text-decoration: none;
+    color: #f7e8d4;
+}
+
+
+
+.card a {
+    color: #000054;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+
+.card-text {
+    text-align: center;
+    padding: 0 5px 5px;
+    line-height: 1.5;
+}
+
+.card img {
+    padding-top: 10px;
+}
+
+/* effect */
+.cards h2 a:hover {
+    color: #f5a555;
+    border-radius: 5px;
+}
+
+.card:hover {
+    border: 4px solid #000054;
+    font-weight: bold;
+}
+
+/* Larger screen */
+@media screen and (min-width: 426px) {
+
+    /* All cards */
+    .card-layout {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    /* Each card */
+    .card {
+        display: flex;
+        flex: 0 1 calc(48%);
+    }
+
+    .card-text {
+        padding-bottom: 0;
+    }
+}
+
+/* largest screen */
+@media screen and (min-width: 992px) {
+
+    .card {
+        flex: 0 1 calc(33% - 5px);
+    }
+}
+/* card layout */
+
+.cards section {
+    margin: 20px 0 50px;
+}
+
+.cards section,
+.card {
+    border-radius: 5px;
+}
+
+
+.cards h2 {
+    font-size: 41px;
+    text-align: center;
+    margin: 11px 0;
+    padding: 10px;
+    color: #f7ead9;
+    background-color: #000054;
+    border-radius: 5px;
+}
+
+.cards a {
+    text-decoration: none;
+    color: #f7ead9;
+}
+
+.card {
+    border-radius: 5px;
+    border: 2px solid #000054;
+    background: white;
+    transition: border .2s;
+    margin-bottom: 16px;
+}
+
+.card a {
+    color: #293D48;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+
+.card-text {
+    text-align: center;
+    padding: 0 5px 5px;
+    line-height: 1.5;
+}
+
+.card img {
+    padding-top: 10px;
+}
+
+/* effect */
+.cards h2 a:hover {
+    color:#f5a555;
+    border-radius: 5px;
+}
+
+.card:hover {
+    border: 4px solid #000054;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.08);
+    font-weight: bold;
+}
+
+/* Larger screen */
+@media screen and (min-width: 426px) {
+
+    /* All cards */
+    .card-layout {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    /* Each card */
+    .card {
+        display: flex;
+        flex: 0 1 calc(48%);
+    }
+
+    .card-text {
+        padding-bottom: 0;
+    }
+}
+
+/* largest screen */
+@media screen and (min-width: 992px) {
+
+    .card {
+        flex: 0 1 calc(33% - 5px);
+    }
+}
 
 
 
@@ -498,189 +680,7 @@ margin-bottom: 20px;
         width: 30%;
     }
 }
-/* card layout */
-.card {
-    border-radius: 5px;
-    border: 2px solid #000054;
-    background: white;
-    transition: border .2s;
-    margin-bottom: 15px;
-}
-.cards section {
-    margin: 20px 0 50px;
-}
 
-.cards section,
-.card {
-    border-radius: 5px;
-}
-
-
-.cards h2 {
-    font-size: 40px;
-    text-align: center;
-    margin: 10px 0;
-    padding: 10px;
-    color: #f7e8d4;
-    background-color: #000054;
-    border-radius: 5px;
-}
-
-.cards a {
-    text-decoration: none;
-    color: #f7e8d4;
-}
-
-
-
-.card a {
-    color: #000054;
-    text-decoration: none;
-    border-radius: 5px;
-
-}
-
-.card-text {
-    text-align: center;
-    padding: 0 5px 5px;
-    line-height: 1.5;
-}
-
-.card img {
-    padding-top: 10px;
-}
-
-/* effect */
-.cards h2 a:hover {
-    color: #f5a555;
-    border-radius: 5px;
-}
-
-.card:hover {
-    border: 4px solid #000054;
-    font-weight: bold;
-}
-
-/* Larger screen */
-@media screen and (min-width: 426px) {
-
-    /* All cards */
-    .card-layout {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
-    /* Each card */
-    .card {
-        display: flex;
-        flex: 0 1 calc(48%);
-    }
-
-    .card-text {
-        padding-bottom: 0;
-    }
-}
-
-/* largest screen */
-@media screen and (min-width: 992px) {
-
-    .card {
-        flex: 0 1 calc(33% - 5px);
-    }
-}
-/* card layout */
-
-.cards section {
-    margin: 20px 0 50px;
-}
-
-.cards section,
-.card {
-    border-radius: 5px;
-}
-
-
-.cards h2 {
-    font-size: 41px;
-    text-align: center;
-    margin: 11px 0;
-    padding: 10px;
-    color: #f7ead9;
-    background-color: #000054;
-    border-radius: 5px;
-}
-
-.cards a {
-    text-decoration: none;
-    color: #f7ead9;
-}
-
-.card {
-    border-radius: 5px;
-    border: 2px solid #000054;
-    background: white;
-    transition: border .2s;
-    margin-bottom: 16px;
-}
-
-.card a {
-    color: #293D48;
-    text-decoration: none;
-    border-radius: 5px;
-
-}
-
-.card-text {
-    text-align: center;
-    padding: 0 5px 5px;
-    line-height: 1.5;
-}
-
-.card img {
-    padding-top: 10px;
-}
-
-/* effect */
-.cards h2 a:hover {
-    color:#f5a555;
-    border-radius: 5px;
-}
-
-.card:hover {
-    border: 4px solid #000054;
-    box-shadow: 20px 20px 30px rgba(0,0,0,0.08);
-    font-weight: bold;
-}
-
-/* Larger screen */
-@media screen and (min-width: 426px) {
-
-    /* All cards */
-    .card-layout {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
-    /* Each card */
-    .card {
-        display: flex;
-        flex: 0 1 calc(48%);
-    }
-
-    .card-text {
-        padding-bottom: 0;
-    }
-}
-
-/* largest screen */
-@media screen and (min-width: 992px) {
-
-    .card {
-        flex: 0 1 calc(33% - 5px);
-    }
-}
 
 
 /* footer */
@@ -789,7 +789,7 @@ footer li:last-child a:hover {
 /* Large layout */
 @media screen and (min-width: 768px) {
     .footer-navbar ul{
-        flex-direction: column;
+
         align-items: flex-star;
         height: auto;
         margin:auto;
